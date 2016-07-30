@@ -12,12 +12,13 @@ class Deck:
     deck = {} # Contains an array of lenght SUITS_NUMBER 
     suits = {} # Contains a 
     suitIndex = range(1, SUITS_NUMBER + 1) # 
-    def __init__(self, card_per_suits = 10, suits = 'Italian', deck_index = 0):
-	self.suits = SUITS[suits]
-	self.shuffle_deck()
+    def __init__(self, suits = 'Italian', cards_per_suit = 10):
+        self.cards_per_suit = cards_per_suit
+        self.suits = SUITS[suits]
+        self.shuffle_deck()
 
     def shuffle_deck(self):
-        self.deck = {'1':range(1,11), '2':range(1,11), '3':range(1,11), '4':range(1,11)} # For cards number
+        self.deck = {'1':range(1,self.cards_per_suit + 1), '2':range(1,self.cards_per_suit + 1), '3':range(1, self.cards_per_suit + 1), '4':range(1, self.cards_per_suit + 1)} # For cards number
         self.suitIndex = range(1, SUITS_NUMBER + 1); # For suits 
 
     def check_deck_empty(self):

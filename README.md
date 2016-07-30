@@ -16,7 +16,7 @@ Since the user has no interaction in this game I have made an infinite loop and 
 Later I found out online the mathematical results on this Italian forum, check it out if you are curious about it:
 http://www.matematicamente.it/forum/viewtopic.php?p=469119#p469119
 
-The script used can be found in the example folder
+The script used can be found in the example folder among others
 
 
 
